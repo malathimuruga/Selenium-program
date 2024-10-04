@@ -23,10 +23,13 @@ public class MissingElement {
 			for (int i = 0; i <mElmnt.size()-1; i++) {
 				int current = mElmnt.get(i);
 				int next = mElmnt.get(i + 1);
-				if (current + 1 != next) {
-					System.out.println("Missing element is :" + (current+1));
+                                 if (current + 1 != next) {
+			        for (int missing = current + 1; missing < next; missing++) {
+			            System.out.println("Missing element is: " + missing);
+
 				}
-			}		
+}
+			}
 	}
 
 }
